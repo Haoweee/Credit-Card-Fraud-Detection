@@ -1,0 +1,9 @@
+./notebook/ipynb_checkpoints
+./data
+
+.pyc
+__pycache__
+.DS_Store
+nbconvert_tmp
+.vscode
+.git
