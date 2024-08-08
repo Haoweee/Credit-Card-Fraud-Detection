@@ -1,5 +1,5 @@
-./notebook/ipynb_checkpoints
-./data
+/notebook/ipynb_checkpoints
+/data
 
 .pyc
 __pycache__
