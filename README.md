@@ -48,27 +48,35 @@ A special thanks to Brandon Harris for developing the Sparkov Data Generation to
 ## Findings
 
 ![Class Imbalance](./images/class-imbalance.png)
+
 There is a significant class imbalance in this dataset. So I decided to manually randomly undersample the dataset to balance the target class
 
 ![Age Distribution of Fraudulent Customers](./images/age-f.png)
+
 The average age of fraudulent customers peak twice. First the age of fraudulent customers grows and it peaks at 25-35 and at 45-55. Then there is a gradual decrease as the age gets older.
 
 ![Distribution of Fraudulent Transaction in Each Cateogory](./images/category.png)
+
 We can see here that customers tend to stick to a certain category when using fraud credit cards.
 
 ![Amount of Fraudulent Transaction in Each Category](./images/amount-category.png)
+
 Even though grocery_pos has the most frauds, but it is not the most expensive. Some categories are more expensive than others.
 
 ![Male/Female Distribution](./images/mf.png)
+
 There is no significant difference in fraud male and female customers.
 
 ![Number of Fraudulent Transactions by Job](./images/jobs.png)
+
 Here we can see that certain jobs tend to engage in fraudulent transactions by jobs.
 
 ![Number of Fraudulent Transactions in Each State](./images/states.png)
+
 This shows the states that have the most fraudulent transactions.
 
 ![Number of Fraudulent Transactions by Hour of Day](./images/hour.png)
+
 Here we can see that most of the fraudulent credit cards are active around 22:00pm - 03:00am
 
 ## Conclusions
