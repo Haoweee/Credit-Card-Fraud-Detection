@@ -6,6 +6,8 @@ Author: Brian Woo
 
 ## Business Problem
 
+Financial institutions face significant challenges due to credit card fraud, which leads to substantial financial losses and erodes customer trust. Detecting and preventing fraudulent transactions is essential for protecting both the financial assets of banks and the satisfaction of their customers. The goal of this project is to develop a machine learning model that accurately distinguishes between legitimate and fraudulent transactions by analyzing various features within transaction data. The model will prioritize precision, ensuring that transactions flagged as fraudulent are highly likely to be correct, thereby minimizing false positives and maintaining a positive customer experience. By striking this balance, the model aims to reduce financial losses from fraud while preserving customer trust and satisfaction.
+
 ## Data Understanding
 
 [Source](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
@@ -78,6 +80,16 @@ This shows the states that have the most fraudulent transactions.
 ![Number of Fraudulent Transactions by Hour of Day](./images/hour.png)
 
 Here we can see that most of the fraudulent credit cards are active around 22:00pm - 03:00am
+
+## Models
+
+All of the models below were ran under the same grid search of 5 cross fold validations, scoring of "precision", with their respective parameter grids for tuning. Each of the models were tested on their precision, recall, and f1-scores to determine which are the best.
+
+    1. Logistic Regression
+    2. XGBoost
+    3. LightGBM
+    4. Random Forest
+    5. Support Vector Machines
 
 ## Conclusions
 
