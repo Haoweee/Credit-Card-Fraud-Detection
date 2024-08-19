@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SafeSwipe</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/result.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <a href="/">SafeSwipe</a>
+        </div>
+        <div class="header-right">
+            <a href="/transactions">Transactions</a>
+            <a href="/analysis">Analysis</a>
+        </div>
+    </div>
+    <hr>
+    <div class="result-page-container">
+        <div class="result-content">
+            <h1>Prediction Result</h1>
+            <p>The transaction is predicted to be: <strong>{{ 'Fraudulent' if prediction == 1 else 'Legitimate' }}</strong></p>
+            <p>Model Confidence: <strong>{{ confidence }}</strong></p>
+
+            <button id="myButton">Back to Transactions</button>
+
+            <script type="text/javascript">
+                document.getElementById("myButton").onclick = function () {
+                    location.href = "/transactions";
+                };
+            </script>
+        </div>
+    </div>
+</body>
+</html>
+

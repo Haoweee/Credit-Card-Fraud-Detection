@@ -1,0 +1,36 @@
+.result-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 250px);
+  padding: 20px;
+}
+
+.result-content {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-content button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.result-content button:hover {
+  background-color: #45a049;
+}
