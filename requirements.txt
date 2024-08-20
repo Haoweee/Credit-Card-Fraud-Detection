@@ -2,6 +2,7 @@
 flask==3.0.3
 joblib==1.4.2
 pandas==2.2.2
+gunicorn==20.1.0
 
 # Notebook Requirements (commented out to reduce slug size)
 # scikit-learn==1.5.1
