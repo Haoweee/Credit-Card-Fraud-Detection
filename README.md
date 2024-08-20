@@ -1,6 +1,6 @@
-![Fraud Logo](./images/Fraud.png)
+<img src="./images/Fraud.png" alt="Fraud Logo" style="width:100%;">
 
-# Credit-Card-Fraud-Detection
+# SafeSwipe
 
 Author: Brian Woo
 
@@ -98,3 +98,11 @@ Best Model: XGBoost
 - Training Precision Score: 0.9985, Test Precision Score: 0.9875
 - Training Recall Score: 0.9985, Test Recall Score: 0.9858
 - Training F1 Score: 0.9985, Test F1 Score: 0.9867
+
+## More
+
+To see more check out the links below!
+
+- [NoteBook](/notebook/fraud_detection.ipynb)
+- [Presentation](/Presentation.pdf)
+- [Deployed Model](https://safeswipe-e7d39aac3b48.herokuapp.com/)
