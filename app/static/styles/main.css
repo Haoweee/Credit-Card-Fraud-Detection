@@ -11,6 +11,7 @@
 .main-content img {
   display: block;
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 .box-container {
@@ -47,4 +48,40 @@
 .footer-main {
   padding-bottom: 5px;
   text-align: center;
+}
+
+@media (max-width: 905px) {
+  .main-content img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    width: 90%;
+  }
+
+  .main-content img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box p {
+    font-size: 14pt;
+  }
 }

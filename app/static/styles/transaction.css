@@ -116,3 +116,36 @@
   color: red;
   font-size: 10pt;
 }
+
+@media (max-width: 750px) {
+  .form-group {
+    grid-template-columns: 1fr;
+  }
+
+  .date-time-group {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  .form-details h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-details h1 {
+    font-size: 18px;
+  }
+
+  .form-details button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

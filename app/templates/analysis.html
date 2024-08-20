@@ -6,7 +6,7 @@
     <title>SafeSwipe</title>
     <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../static/styles/styles.css">
-    <link rel="stylesheet" href="../static/styles/main.css">
+    <link rel="stylesheet" href="../static/styles/analysis.css">
 </head>
 <body>
     <div class="header">
@@ -21,15 +21,74 @@
     </div>
     <hr>
     <div class="main-content">
-        <img src="../static/images/analysis/State vs Frauds.png" alt="State vs Frauds">
-        <img src="../static/images/analysis/age-f.png" alt="age-f">
-        <img src="../static/images/analysis/amount-category.png" alt="amount-category">
-        <img src="../static/images/analysis/category.png" alt="category">
-        <img src="../static/images/analysis/class-imbalance.png" alt="class-imbalance">
-        <img src="../static/images/analysis/hour.png" alt="hour">
-        <img src="../static/images/analysis/jobs.png" alt="jobs">
-        <img src="../static/images/analysis/mf.png" alt="mf">
-        <img src="../static/images/analysis/states.png" alt="states">
-    </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="class-imbalance">
+                    <img src="../static/images/analysis/class-imbalance.png" alt="class-imbalance">
+                    <p>Credit Card Fraud Transaction datasets usually have a large class imbalance. To counter this large class imbalance I took all of the fraudulent cases and randomly sampled the same amount to balance the classes.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="states">
+                    <img src="../static/images/analysis/states.png" alt="states">
+                    <p>This shows the states that have the most fraudulent transactions.</p>
+                </div>
+            </div>
+        </div>             
+        
+        <div class="map-container">
+            <div class="map-box">
+                <div class="map">
+                    <img src="../static/images/analysis/State vs Frauds.png" alt="State vs Frauds">
+                    <p>This is a map of the United States, with the number of fraudulent transactions in each state. As you can see, the states where the population is greater there are more fraudulent transactions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="category">
+                    <img src="../static/images/analysis/category.png" alt="category">
+                    <p>The top 5 most common categories that have fraudulent activity is grocery pos, shopping net, misc net, shopping pos, and gas transport.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="category">
+                    <img src="../static/images/analysis/amount-category.png" alt="amount-category">
+                    <p>Despite the top 5 most common categories that have fraudulent activity, different categories have different average costs. With shopping net being the highest, then shopping pos, and misc net</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="age-gender">
+                    <img src="../static/images/analysis/age-f.png" alt="age-f">
+                    <p>The average age of fraudulent customers peak twice. First the age of fraudulent customers grows and it peaks at 25-35 and at 45-55. Then there is a gradual decrease as the age gets older.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="age-gender">
+                    <img src="../static/images/analysis/mf.png" alt="mf">
+                    <p>There is no significant difference in fraud male and female customers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="job">
+                    <img src="../static/images/analysis/jobs.png" alt="jobs">
+                    <p>Here we can see that certain jobs tend to engage in fraudulent transactions by jobs.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="hour">
+                    <img src="../static/images/analysis/hour.png" alt="hour">
+                    <p>Here we can see that most of the fraudulent credit cards are active around 22:00pm - 03:00am</p>                   
+                </div>
+            </div>
+        </div>
+    </div>  
 </body>
 </html>

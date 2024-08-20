@@ -43,3 +43,34 @@ hr {
 .header-right a {
   margin-left: 20px;
 }
+
+@media (max-width: 768px) {
+  .header {
+    width: 90%;
+  }
+
+  .header-left {
+    font-size: 24pt;
+  }
+
+  .header-right a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-left img {
+    width: 40px;
+  }
+
+  .header-left {
+    font-size: 20pt;
+    margin-bottom: 8px;
+  }
+
+  .header-right a {
+    margin-left: 0;
+    font-size: 10pt;
+  }
+}
