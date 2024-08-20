@@ -29,8 +29,15 @@ hr {
 }
 
 .header-left {
+  display: flex;
+  align-items: center;
   font-size: 30pt;
   font-weight: bold;
+}
+
+.header-left img {
+  width: 50px;
+  margin-right: 8px;
 }
 
 .header-right a {
