@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>SafeSwipe</title>
-    <link rel="stylesheet" href="../static/styles.css">
-    <link rel="stylesheet" href="../static/result.css">
+    <link rel="stylesheet" href="../static/styles/styles.css">
+    <link rel="stylesheet" href="../static/styles/result.css">
 </head>
 <body>
     <div class="header">
@@ -20,7 +20,11 @@
     <div class="result-page-container">
         <div class="result-content">
             <h1>Prediction Result</h1>
-            <p>The transaction is predicted to be: <strong>{{ 'Fraudulent' if prediction == 1 else 'Legitimate' }}</strong></p>
+            <p>
+                <strong class="{{ 'fraudulent' if prediction == 1 else 'legitimate' }}">
+                    {{ 'Fraudulent' if prediction == 1 else 'Legitimate' }}
+                </strong>
+            </p>            
             <p>Model Confidence: <strong>{{ confidence }}</strong></p>
 
             <button id="myButton">Back to Transactions</button>

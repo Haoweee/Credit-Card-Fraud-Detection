@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>SafeSwipe</title>
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/styles/styles.css">
+    <link rel="stylesheet" href="../static/styles/main.css">
 </head>
 <body>
     <div class="header">
         <div class="header-left">
-            <a href="/">SafeSwipe</a>
+            <a href="/"><span class="logo-font">SafeSwipe</span></a>
         </div>
         <div class="header-right">
             <a href="/transactions">Transactions</a>
@@ -16,5 +17,26 @@
         </div>
     </div>
     <hr>
+    <div class="main-content">
+        <div class="main-image">
+            <img src="../static/images/main-image.png" alt="main-image">
+        </div>
+        <h1>Welcome to <span class="logo-font">SafeSwipe</span></h1>
+        <p>SafeSwipe is an advanced credit card fraud detection system powered by cutting-edge machine learning algorithms. Designed with precision and security in mind, this system analyzes patterns and anomalies in your credit card transactions to detect and prevent fraudulent activities in real-time. Whether you're concerned about potential threats or just want to monitor your spending habits, SafeSwipe provides you with detailed insights and peace of mind by identifying any suspicious transactions before they become a problem. Easily navigate through your transaction history and trust that SafeSwipe is safeguarding your financial well-being every step of the way.</p>
+        
+        <div class="box-container">
+            <div class="box" onclick="window.location.href='/transactions';">
+                <p>Transactions</p>
+                <img src="../static/images/transaction.PNG" alt="">
+            </div>
+            <div class="box" onclick="window.location.href='/analysis';">
+                <p>Analysis</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-main">
+        <p><strong>Note: The dataset utilized in this project is simulated and not intended for actual credit card transactions.</strong></p>
+    </div>
 </body>
 </html>

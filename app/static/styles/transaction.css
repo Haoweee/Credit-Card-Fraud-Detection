@@ -14,7 +14,7 @@
 }
 
 .form-details {
-  background-color: #fff;
+  background-color: #5c36ba;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -24,7 +24,7 @@
   text-align: center;
   margin-bottom: 20px;
   font-size: 24px;
-  color: #333;
+  color: #fff;
 }
 
 .form-group {
@@ -36,15 +36,15 @@
 
 .form-group label {
   font-weight: bold;
-  color: #555;
+  color: #c4adff;
   margin-bottom: 5px;
   display: block;
 }
 
 .last-row label {
   font-weight: bold;
-  color: #555;
-  margin-bottom: 10px;
+  color: #c4adff;
+  margin-bottom: 20px;
 }
 
 .form-group input.same-width,
@@ -55,7 +55,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
-  color: #333;
+  color: #000;
   box-sizing: border-box;
   line-height: 1.5;
   appearance: none;
@@ -86,7 +86,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
-  color: #333;
+  color: #000;
   box-sizing: border-box;
   line-height: 1.5;
   appearance: none;
@@ -97,22 +97,22 @@
 .form-details button {
   width: 100%;
   padding: 12px;
-  background-color: #4caf50;
-  color: white;
+  background-color: #c4adff;
+  color: #000;
   border: none;
   border-radius: 4px;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .form-details button:hover {
-  background-color: #45a049;
+  background-color: #c4adf0;
 }
 
 .side-note {
   text-align: center;
   color: red;
   font-size: 10pt;
-  font-weight: bold;
 }

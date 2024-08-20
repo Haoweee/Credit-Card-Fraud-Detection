@@ -34,3 +34,14 @@
 .result-content button:hover {
   background-color: #45a049;
 }
+
+/* styles.css or result.css */
+.fraudulent {
+  color: red;
+  font-size: 16pt;
+}
+
+.legitimate {
+  color: green;
+  font-size: 16pt;
+}

@@ -1,0 +1,50 @@
+.main-content {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.main-image {
+  background-color: #5c36ba;
+  border-radius: 10px;
+}
+
+.main-content img {
+  display: block;
+  margin: 0 auto;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.box {
+  width: 500px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+  width: 100%;
+}
+
+.box p {
+  margin-top: 0;
+  color: #000;
+  font-weight: bold;
+}
+
+.footer-main {
+  padding-bottom: 5px;
+  text-align: center;
+}

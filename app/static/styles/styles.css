@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  background-color: #c4adff;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -10,11 +10,17 @@ hr {
   margin: 0;
 }
 
+.logo-font {
+  font-family: "Brush Script MT", cursive;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .header a {
@@ -23,7 +29,7 @@ hr {
 }
 
 .header-left {
-  font-size: 26pt;
+  font-size: 30pt;
   font-weight: bold;
 }
 
