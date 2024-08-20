@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import joblib
+import os
 import pandas as pd
 
 app = Flask(__name__)
@@ -48,13 +49,9 @@ def predict():
     confidence = prediction_proba[0][1] if prediction == 1 else prediction_proba[0][0]
     confidence_percentage = f"{confidence * 100:.2f}%"
 
-    print('prediction', prediction, flush=True)
-    print('prediction_proba', prediction_proba, flush=True)
-    print('confidence', confidence, flush=True)
-    print('confidence_percentage', confidence_percentage, flush=True)
-
     return render_template('result.html', prediction=prediction, confidence=confidence_percentage)
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+
