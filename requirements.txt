@@ -2,8 +2,8 @@ flask==3.0.3
 scipy==1.13.1
 scikit-learn==1.5.1
 lightgbm==4.5.0
-xgboost==2.2.1
-notebook==6.1.4
+xgboost==2.1.1
+notebook==7.0.8
 jupyter==1.0.0
 joblib==1.4.2
 regex==2024.7.24
