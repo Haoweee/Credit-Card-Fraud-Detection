@@ -1,4 +1,6 @@
-<img src="./images/Fraud.png" alt="Fraud Logo" style="width:100%;">
+<div style="text-align: center; background-color: #00b9c8; padding: 0 10px; border-radius: 8px;">
+    <img src="./images/Fraud.png" alt="Fraud Logo" style="border-radius: 8px;">
+</div>
 
 # SafeSwipe
 
@@ -49,7 +51,9 @@ A special thanks to Brandon Harris for developing the Sparkov Data Generation to
 
 ## Findings
 
-![Class Imbalance](./images/class-imbalance.png)
+<div style="background-color: #fff; padding: 10px; border-radius: 8px; width: fit-content;">
+    <img src="./images/class-imbalance.png" alt="Class Imbalance">
+</div>
 
 There is a significant class imbalance in this dataset. So I decided to randomly undersample the dataset to balance the target class.
 
