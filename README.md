@@ -21,7 +21,7 @@ The dataset was generated using the "Sparkov Data Generation" tool, created by B
 Simulator Information:
 The Sparkov Data Generation tool uses a predefined list of merchants, customers, and transaction categories. It leverages the "faker" library in Python to simulate realistic transaction data based on user-defined profiles. For example, a profile like "adults 25-50 female rural" would simulate transactions for adult females aged 25-50 living in rural areas. This profile specifies parameters such as the number of transactions per day, distribution across days of the week, and statistical properties (mean, standard deviation) for transaction amounts in various categories. The simulation process generates transactions based on these distributions, creating data that reflects the behavior of different demographic groups. The final dataset used in this project was created by generating transactions across multiple profiles and merging them to produce a more comprehensive and realistic representation of credit card transaction activity.
 
-***Acknowledgements:***
+**_Acknowledgements:_**
 
 A special thanks to Brandon Harris for developing the Sparkov Data Generation tool, which made it possible to create this simulated fraud transaction dataset. This tool provided an easy-to-use platform for generating realistic transaction data for fraud detection projects.
 
@@ -29,29 +29,29 @@ A special thanks to Brandon Harris for developing the Sparkov Data Generation to
 
 1. Load the Data
 2. Data Cleaning
-    - Assign proper dtypes to columns
-    - Check for missingness and duplicates
-    - Handle missing values appropriately
-    - Check for outliers
-    - Determine correlation matrices
+   - Assign proper dtypes to columns
+   - Check for missingness and duplicates
+   - Handle missing values appropriately
+   - Check for outliers
+   - Determine correlation matrices
 3. Data Transformation
-    - Standardize Data
-    - One Hot Encode categorical features
+   - Standardize Data
+   - One Hot Encode categorical features
 4. Feature Engineering
-    - City population to extra small, small, medium, large, extra large
-    - Combined job types by keywords
-    - Age at transaction
-    - Average transaction amount
-    - Unique transaction in a day
-    - Transaction sequence
-    - Calculate time since last transaction
-    - Calculate distance between user location and merchant location
+   - City population to extra small, small, medium, large, extra large
+   - Combined job types by keywords
+   - Age at transaction
+   - Average transaction amount
+   - Unique transaction in a day
+   - Transaction sequence
+   - Calculate time since last transaction
+   - Calculate distance between user location and merchant location
 
 ## Findings
 
 ![Class Imbalance](./images/class-imbalance.png)
 
-There is a significant class imbalance in this dataset. So I decided to manually randomly undersample the dataset to balance the target class
+There is a significant class imbalance in this dataset. So I decided to randomly undersample the dataset to balance the target class.
 
 ![Age Distribution of Fraudulent Customers](./images/age-f.png)
 
@@ -79,7 +79,7 @@ This shows the states that have the most fraudulent transactions.
 
 ![Number of Fraudulent Transactions by Hour of Day](./images/hour.png)
 
-Here we can see that most of the fraudulent credit cards are active around 22:00pm - 03:00am
+Here we can see that most of the fraudulent credit cards are active around 22:00pm - 03:00am.
 
 ## Models
 
@@ -98,6 +98,12 @@ Best Model: XGBoost
 - Training Precision Score: 0.9985, Test Precision Score: 0.9875
 - Training Recall Score: 0.9985, Test Recall Score: 0.9858
 - Training F1 Score: 0.9985, Test F1 Score: 0.9867
+
+## Next Steps
+
+- Build Account Database: managing user accounts
+- Flexible Input: allow optional fields for easier use
+- Implement Real-Time Alerts
 
 ## More
 
