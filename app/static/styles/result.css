@@ -22,25 +22,26 @@
 .result-content button {
   width: 100%;
   padding: 12px;
-  background-color: #4caf50;
-  color: white;
+  background-color: #c4adff;
+  color: #000;
   border: none;
   border-radius: 4px;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .result-content button:hover {
-  background-color: #45a049;
+  background-color: #baa1e9;
 }
 
 .fraudulent {
-  color: red;
+  color: #ff0000;
   font-size: 16pt;
 }
 
 .legitimate {
-  color: green;
+  color: #34b233;
   font-size: 16pt;
 }

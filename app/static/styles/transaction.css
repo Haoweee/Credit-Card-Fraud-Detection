@@ -47,6 +47,12 @@
   margin-bottom: 20px;
 }
 
+.last-row select:focus,
+.last-row input.same-width:focus {
+  outline: none;
+  border-color: #c4adff;
+}
+
 .form-group input.same-width,
 .form-group select.same-width,
 .date-time-group select {
@@ -66,7 +72,7 @@
 .form-group select:focus,
 .form-group input.same-width:focus {
   outline: none;
-  border-color: #4caf50;
+  border-color: #c4adff;
 }
 
 .date-time-group {
@@ -108,7 +114,7 @@
 }
 
 .form-details button:hover {
-  background-color: #c4adf0;
+  background-color: #baa1e9;
 }
 
 .side-note {
