@@ -1,6 +1,4 @@
-<div style="text-align: center; background-color: #00b9c8; padding: 0 10px; border-radius: 8px;">
-    <img src="./images/Fraud.png" alt="Fraud Logo" style="border-radius: 8px;">
-</div>
+<img src="./images/Fraud.png" alt="Fraud Logo" style="width:100%;">
 
 # SafeSwipe
 
@@ -51,9 +49,7 @@ A special thanks to Brandon Harris for developing the Sparkov Data Generation to
 
 ## Findings
 
-<div style="background-color: #fff; padding: 10px; border-radius: 8px; width: fit-content;">
-    <img src="./images/class-imbalance.png" alt="Class Imbalance">
-</div>
+![Class Imbalance](./images/class-imbalance.png)
 
 There is a significant class imbalance in this dataset. So I decided to randomly undersample the dataset to balance the target class.
 
@@ -97,11 +93,15 @@ All of the models below were ran under the same grid search of 5 cross fold vali
 
 ## Conclusions
 
+![Final Metrics](./images/metrics.png)
+
 Best Model: XGBoost
 
 - Training Precision Score: 0.9985, Test Precision Score: 0.9875
 - Training Recall Score: 0.9985, Test Recall Score: 0.9858
 - Training F1 Score: 0.9985, Test F1 Score: 0.9867
+
+Has the second best precision score, but the highest recall and f1-score. XGBoost has the highest overall scores. Therefore, I chose XGBoost to be the final model.
 
 ## Next Steps
 
